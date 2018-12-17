@@ -1,0 +1,19 @@
+long_string = input("enter a random word or sentance ")
+
+countAlpha = 0
+countDigit = 0
+countCharacter = 0
+
+for character in long_string:
+ if (character.isalpha()) == True:
+     #print(character)
+     countAlpha+=1
+ elif (character.isdigit()) == True:
+   #print(character)
+   countDigit+=1
+ else:
+   countCharacter+=1
+print(end='\n')
+print("The number of alpha is:",countAlpha)
+print("The number of digitas is:",countDigit)
+print("The total number of characters is:",countCharacter + countAlpha + countDigit)
